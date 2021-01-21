@@ -1,0 +1,2 @@
+# Google_HashCode_2021_Qualification
+The_Project_For_Google_HashCode_2021

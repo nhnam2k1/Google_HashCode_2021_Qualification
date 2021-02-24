@@ -1,0 +1,72 @@
+﻿  Dataset.cpp
+  HashCodeTemplateCpp.cpp
+  NeighborOperation.cpp
+  Parser.cpp
+  Printer.cpp
+  Scoring.cpp
+  SelectingManager.cpp
+  Solution.cpp
+  Solver.cpp
+  Timer.cpp
+D:\Documents\GitHub\HC_Template\TemplateCpp\SelectingManager.cpp(38,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+D:\Documents\GitHub\HC_Template\TemplateCpp\SelectingManager.cpp(39,9): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\numeric(88,26): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ] (compiling source file SelectingManager.cpp)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\execution(4124): message : see reference to function template instantiation '_Ty std::reduce<_FwdIt,int,_Fn>(const _InIt,const _InIt,_Ty,_BinOp)' being compiled
+          with
+          [
+              _Ty=int,
+              _FwdIt=double *,
+              _Fn=std::plus<void>,
+              _InIt=double *,
+              _BinOp=std::plus<void>
+          ] (compiling source file SelectingManager.cpp)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\numeric(114): message : see reference to function template instantiation '_Ty std::reduce<const std::execution::parallel_unsequenced_policy&,_FwdIt,int,std::plus<void>,0>(_ExPo,const _FwdIt,const _FwdIt,_Ty,_BinOp) noexcept' being compiled
+          with
+          [
+              _Ty=int,
+              _FwdIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,
+              _ExPo=const std::execution::parallel_unsequenced_policy &,
+              _BinOp=std::plus<void>
+          ] (compiling source file SelectingManager.cpp)
+D:\Documents\GitHub\HC_Template\TemplateCpp\SelectingManager.cpp(26): message : see reference to function template instantiation '_Ty std::reduce<const std::execution::parallel_unsequenced_policy&,std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,int,0>(_ExPo,const _FwdIt,const _FwdIt,_Ty) noexcept' being compiled
+          with
+          [
+              _Ty=int,
+              _ExPo=const std::execution::parallel_unsequenced_policy &,
+              _FwdIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\numeric(60,1): warning C4244: '+=': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ] (compiling source file SelectingManager.cpp)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\numeric(83): message : see reference to function template instantiation '_Ty std::_Reduce_plus_arithmetic_ranges<_RanIt,_Ty>(_InIt,const _InIt,_Ty)' being compiled
+          with
+          [
+              _Ty=int,
+              _RanIt=double *,
+              _InIt=double *
+          ] (compiling source file SelectingManager.cpp)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\execution(4124): message : see reference to function template instantiation '_Ty std::reduce<_FwdIt,int,_Fn>(const _InIt,const _InIt,_Ty,_BinOp)' being compiled
+          with
+          [
+              _Ty=int,
+              _FwdIt=double *,
+              _Fn=std::plus<void>,
+              _InIt=double *,
+              _BinOp=std::plus<void>
+          ] (compiling source file SelectingManager.cpp)
+D:\Documents\GitHub\HC_Template\TemplateCpp\Solver.cpp(80,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Documents\GitHub\HC_Template\TemplateCpp\Solver.cpp(151,9): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Documents\GitHub\HC_Template\TemplateCpp\Solver.cpp(171,25): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\Documents\GitHub\HC_Template\TemplateCpp\Solver.cpp(177,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+D:\Documents\GitHub\HC_Template\TemplateCpp\Solver.cpp(186,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  HashCodeTemplateCpp.vcxproj -> D:\Documents\GitHub\HC_Template\TemplateCpp\x64\Debug\TemplateCpp.exe

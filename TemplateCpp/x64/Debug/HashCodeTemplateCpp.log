@@ -1,1 +1,17 @@
-﻿  HashCodeTemplateCpp.vcxproj -> D:\Documents\GitHub\Google_HashCode_2021_Qualification\TemplateCpp\x64\Debug\TemplateCpp.exe
+﻿  Dataset.cpp
+  HashCodeTemplateCpp.cpp
+  NeighborOperation.cpp
+  Parser.cpp
+  Scoring.cpp
+  Solver.cpp
+  StreetCollection.cpp
+D:\Documents\GitHub\Google_HashCode_2021_Qualification\TemplateCpp\Solver.cpp(79,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Documents\GitHub\Google_HashCode_2021_Qualification\TemplateCpp\Solver.cpp(150,9): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Documents\GitHub\Google_HashCode_2021_Qualification\TemplateCpp\Solver.cpp(170,25): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\Documents\GitHub\Google_HashCode_2021_Qualification\TemplateCpp\Solver.cpp(176,1): warning C4267: 'argument': conversion from 'size_t' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+D:\Documents\GitHub\Google_HashCode_2021_Qualification\TemplateCpp\Solver.cpp(185,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  HashCodeTemplateCpp.vcxproj -> D:\Documents\GitHub\Google_HashCode_2021_Qualification\TemplateCpp\x64\Debug\TemplateCpp.exe

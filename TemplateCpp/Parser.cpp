@@ -5,6 +5,8 @@
 #include "Dataset.h"
 #include "Parser.h"
 #include "StreetCollection.h"
+#include <unordered_set>
+#include <vector>
 
 using namespace std;
 namespace fs = std::filesystem;
@@ -20,9 +22,13 @@ Dataset Parser::GetDataFromStream(std::string filepath, std::string filename)
 #pragma endregion
 
 	Dataset dataset = Dataset(filename); // Example: fin >> n (reading n from "fin" stream)
-	StreetCollection streetColection;
 	int duration, intersection, street, vehicle, bonusPoint;
-	
+	StreetCollection streetCollection;
+
+	streetCollection.streetID.clear();
+	streetCollection.streetName.clear();
+	streetCollection.cnt = 0;
+
 	fin >> duration >> intersection >> street >> vehicle >>bonusPoint;
 	dataset.duration = duration;
 	dataset.intersection = intersection;
@@ -43,6 +49,12 @@ Dataset Parser::GetDataFromStream(std::string filepath, std::string filename)
 		street.name = name;
 		street.time = length;
 		dataset.streets.push_back(street);
+
+		if (streetCollection.streetID.find(name) == streetCollection.streetID.end()) {
+			streetCollection.streetID[name] = streetCollection.cnt;
+			streetCollection.streetName.push_back(name);
+			streetCollection.cnt++;
+		}
 	}
 
 	for (int i = 0; i < vehicle; i++) 
@@ -58,6 +70,7 @@ Dataset Parser::GetDataFromStream(std::string filepath, std::string filename)
 			vehicle.paths.push_back(name);
 		}
 	}
+	dataset.collection = streetCollection;
 	return dataset;
 }
 

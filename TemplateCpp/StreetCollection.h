@@ -6,10 +6,8 @@
 class StreetCollection
 {
 public:
-	static std::unordered_map<std::string, int> streetID;
-	static std::vector<std::string> streetName;
-	static int cnt;
+	 std::unordered_map<std::string, int> streetID;
+	std::vector<std::string> streetName;
+	int cnt;
 };
-
-int StreetCollection::cnt = 0;
 

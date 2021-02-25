@@ -18,7 +18,6 @@
 #pragma endregion
 
 // GPU header utility
-#include "thrust_useful_function.h"
 #include "thread_pool.hpp"
 
 using namespace std;

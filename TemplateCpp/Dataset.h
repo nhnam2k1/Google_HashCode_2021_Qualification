@@ -10,7 +10,7 @@ struct Street {
 
 struct Vehicle {
 	int path;
-	std::vector<int> paths;
+	std::vector<std::string> paths;
 };
 
 #pragma once

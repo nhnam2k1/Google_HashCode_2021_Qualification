@@ -11,3 +11,5 @@ public:
 	static int cnt;
 };
 
+int StreetCollection::cnt = 0;
+

@@ -1,6 +1,6 @@
 #include <vector>
 #include <string>
-
+#include "StreetCollection.h"
 
 struct Street {
 	int begin, end;
@@ -27,6 +27,7 @@ public:
 	int finishPoint; // F
 	std::vector<Street> streets;
 	std::vector<Vehicle> vehicles;
+	StreetCollection collection;
 private:
 	std::string filename;
 };

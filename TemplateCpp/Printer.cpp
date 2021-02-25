@@ -28,6 +28,15 @@ void Printer::PrintSolution(Solution& solution, std::string filename)
 	ofstream fout(outputFile);   fout.sync_with_stdio(false);  fout.tie(NULL);
 #pragma endregion
 
+	fout << solution.numIntersection << endl;
+	for (int i = 0; i < solution.numIntersection; ++i) {
+		fout << solution.intersections[i].id << endl;
+		fout << solution.intersections[i].numStreet << endl;
+		for (int j = 0; j < solution.intersections[i].numStreet; ++j) {
+			fout << solution.intersections[i].schedules[j].streetName
+				<< solution.intersections[i].schedules[j].time << endl;
+		}
+	}
 	
 	
 }

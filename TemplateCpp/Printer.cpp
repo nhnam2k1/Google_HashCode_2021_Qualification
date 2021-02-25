@@ -33,7 +33,7 @@ void Printer::PrintSolution(Solution& solution, std::string filename)
 		fout << solution.intersections[i].id << endl;
 		fout << solution.intersections[i].numStreet << endl;
 		for (int j = 0; j < solution.intersections[i].numStreet; ++j) {
-			fout << solution.intersections[i].schedules[j].streetName
+			fout << solution.intersections[i].schedules[j].streetName << " "
 				<< solution.intersections[i].schedules[j].time << endl;
 		}
 	}

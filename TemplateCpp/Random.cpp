@@ -12,15 +12,19 @@ Solution Random::generateRandomSolution(Dataset dataset)
 		}
 		bool placedGreenLight = false;
 		Intersection inter;
-		inter.numStreet = i;
+		inter.id = i;
+		inter.numStreet = 0;
+
+		int d = dataset.duration / 2;
 
 		for (int j = 0; j < incomingStreet.size(); ++j) {
 			int hasTraffic = rand() % 100 + 1;
 			if (hasTraffic >= 50) { // 50% for an incoming street to have a green traffic light
 				placedGreenLight = true;
+				inter.numStreet++;
 				Schedule sche;
 				sche.streetName = incomingStreet[j].name;
-				sche.time = rand() % 50 + 1; // random time each traffic between 1 and 50
+				sche.time = rand() % d + 1; // random time each traffic between 1 and 50
 				inter.schedules.push_back(sche);
 			}
 		}

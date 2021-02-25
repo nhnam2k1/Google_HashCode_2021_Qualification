@@ -18,7 +18,7 @@ Parser::Parser()
 Dataset Parser::GetDataFromStream(std::string filepath, std::string filename)
 {
 #pragma region The stable code (not touch), use fin for reading input
-	ifstream fin(filename);    fin.sync_with_stdio(false);   fin.tie(NULL);
+	ifstream fin(filepath);    fin.sync_with_stdio(false);   fin.tie(NULL);
 #pragma endregion
 
 	Dataset dataset = Dataset(filename); // Example: fin >> n (reading n from "fin" stream)

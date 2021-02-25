@@ -24,12 +24,12 @@ Dataset Parser::GetDataFromStream(std::string filepath, std::string filename)
 	int duration, intersection, street, vehicle, bonusPoint;
 	
 	fin >> duration >> intersection >> street >> vehicle >>bonusPoint;
-
 	dataset.duration = duration;
 	dataset.intersection = intersection;
 	dataset.street = street;
 	dataset.vehicle = vehicle;
 	dataset.finishPoint = bonusPoint;
+
 
 	for (int i = 0; i < street; i++) 
 	{

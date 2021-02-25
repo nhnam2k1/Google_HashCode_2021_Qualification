@@ -68,12 +68,6 @@
     <ClInclude Include="Printer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="thrust_useful_function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cuda_useful_function.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Timer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
